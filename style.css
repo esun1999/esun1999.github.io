@@ -114,6 +114,11 @@ ul{
 	}	
 }
 @media (max-width: 576px) {
+	#profile{
+		margin: 2em 0;
+		height: 40vh;
+		width: 60vw;
+	}
 	.main-page-img{
 		max-height: 10rem;
 	}
