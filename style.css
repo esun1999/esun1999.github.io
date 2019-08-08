@@ -10,45 +10,42 @@ html, body{
 .navbar{
 	padding: .8rem;
 }
-
+.card-img-top{
+	max-height: 20vh;
+}
+.card{
+	margin: 5em;
+	width: 15rem;
+}
 .navbar-nav li{
 	padding-right: 20px;
 }
 .nav-link{
 	font-size: 1.1em; !important
 }
-.carousel-inner img{
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.bg{
 	width: 100%;
 	height: 92vh;
 	opacity: 0.8;
 }
 .carousel-caption{
 	position: absolute;
-	top: 40%;
+	top: 35vh;
 	transform: translateY(-50%);
 }
-.row{
-	position: absolute;
-	top: 40%;
-	transform: translateY(-50%);
-	padding: 10vh 20vw;
-	max-height: 50%;
-}
+
 .contact-text{
 	position: absolute;
 	top: 40%;
 	transform: translateY(-50%);
 }
-#education{
-	color: white;
-}
-.row img{
-	max-width: 15rem;
-	max-height: 15rem;
-}
-.logo{
+.logo, .main-page-titles{
 	font-family: 'Caveat', cursive;
-	font-size: 7rem;
+	font-size: 6rem;
 	font-weight: bold;
 	text-shadow: 1px 1px 5px #000;
 }
@@ -71,6 +68,9 @@ html, body{
 	height: 20em;
 	width: 16em;
 }
+.container.row.align-items-center{
+	padding: 2em;
+}
 .social a{
 	font-size: 4.5em;
 	padding: 3rem;
@@ -80,6 +80,10 @@ html, body{
 }
 .fa-envelope-square:hover ,.fa-medium:hover ,.fa-linkedin:hover,.fa-github-square:hover{
 	color: #d5d5d5;
+}
+.row h2{
+	font-size: 1.5em;
+	padding: 1.5em;
 }
 
 /*---Media Queries --*/
@@ -110,11 +114,30 @@ html, body{
 	}	
 }
 @media (max-width: 576px) {
+	.main-page-img{
+		max-height: 10rem;
+	}
+	.subtitle{
+		top: 33%;
+	}
+	.subtitle p{
+		font-size: 2vh;
+	}
+	.subtitle li{
+		font-size: 2vh;
+	}
 	.carousel-caption{
-		top: 40%;
+		top: 33%;
 	}
 	.carousel-caption h1{
 		font-size: 5rem;
+	}
+	.row h1{
+		font-size: 1.5em;
+	}
+	.row h2{
+		font-size: 1em;
+		padding: 0;
 	}
 	.carousel-caption h3{
 		font-size: 110%;
@@ -123,11 +146,7 @@ html, body{
 		font-size: 2em;
 		padding: .7rem;
 	}	
-	.row{
-		position: absolute;
-		top: 15vh;
-		transform: translateY(-50%);
-		padding: 10vh 15vw;
-		max-height: 50%;
+	.row div{
+		padding: 0.5em;
 	}
 }
