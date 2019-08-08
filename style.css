@@ -11,11 +11,13 @@ html, body{
 	padding: .8rem;
 }
 .card-img-top{
-	max-height: 20vh;
+	max-height: 60vh;
 }
 .card{
-	margin: 5em;
-	width: 15rem;
+	margin: 1em;
+}
+.card-deck{
+	padding: 1em 10em;
 }
 .navbar-nav li{
 	padding-right: 20px;
@@ -85,6 +87,12 @@ ul{
 	font-size: 1.5em;
 	padding: 1.5em;
 }
+.carousel-control-prev-icon{
+ 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -115,7 +123,7 @@ ul{
 }
 @media (max-width: 576px) {
 	#profile{
-		margin: 2em 0;
+		margin: 1em 0;
 		height: 40vh;
 		width: 60vw;
 	}
@@ -153,5 +161,8 @@ ul{
 	}	
 	.row div{
 		padding: 0.5em;
+	}
+	.card-deck{
+		padding: 1em 2em;
 	}
 }
