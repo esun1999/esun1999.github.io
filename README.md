@@ -1,3 +1,3 @@
-# esun1999.github.io
+# ericsun.me
 
 Personal website using HTML, CSS, and Bootstrap
