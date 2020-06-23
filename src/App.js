@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Carousel from './pages/carousel/Carousel';
@@ -13,6 +13,8 @@ import { faGithubSquare, faMedium, faLinkedin } from '@fortawesome/free-brands-s
 function App() {
 library.add(faEnvelopeSquare, faGithubSquare, faMedium, faLinkedin)
   return (
+    <HashRouter basename='/'>
+
     <div className="App">
       <NavBar/>
       <Switch>
@@ -22,6 +24,8 @@ library.add(faEnvelopeSquare, faGithubSquare, faMedium, faLinkedin)
           <Route path="/contact" component={Contact} />
       </Switch>
     </div>
+    </HashRouter>
+
   );
 }
 

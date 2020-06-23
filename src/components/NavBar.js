@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import resume from '../assets/resume.pdf'
 
 function NavBar() {
@@ -12,19 +14,19 @@ function NavBar() {
 			<div className="collapse navbar-collapse" id="navbarResponsive">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
-						<a href="/" className="nav-link">Home</a>
+						<Link to="/" className="nav-link">Home</Link>
 					</li>
 					<li className="nav-item">
-						<a href="/projects" className="nav-link">Projects</a>
+						<Link to="/projects" className="nav-link">Projects</Link>
 					</li>
 					<li className="nav-item">
-						<a href="/work" className="nav-link">Work</a>
+						<Link to="/work" className="nav-link">Work</Link>
 					</li>				
 					<li className="nav-item">
 						<a href= {resume} target="_blank" className="nav-link">Resume</a>
 					</li>
 					<li className="nav-item">
-						<a href="/contact" className="nav-link">Contact</a>
+						<Link to="/contact" className="nav-link">Contact</Link>
 					</li>
 				</ul>
 			</div>
