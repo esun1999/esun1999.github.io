@@ -2,30 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 
 html, body{
+	width: 100%;
 	color: #222;
 	font-family: 'Poppins', sans-serif;
-}
-.logo{
-    font-family: 'Caveat', cursive;
-    font-size: 6rem;
-	font-weight: bold;
-}
-.bg{
-	width: 100%;
-    height: 95vh;
-}
-.dp{
-	border-radius: 100%;
-	height: 18em;
-    width: 16em;
-    border-color: white;
-    border-width: 0.1em;
-    border-style: solid;
-}
-.carousel-caption{
-	position: absolute;
-	top: 40vh;
-	transform: translateY(-50%);
+	overflow-x:hidden;
+}	
+.navbar{
+	padding: .8rem;
 }
 .content-links{
 	color: white;
@@ -34,27 +17,87 @@ ul{
 	list-style-type: none;
 	padding-left: 0;
 }
-.main-page-img{
-    max-height: 15em;
+.bg{
+	width: 100%;
+	height: 92vh;
+	opacity: 0.9;
 }
-.firstSlide{
-    top: 40vh;
+.carousel-caption{
+	position: absolute;
+	top: 35vh;
+	transform: translateY(-50%);
+}
+.contact-text{
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+}
+.logo, .main-page-titles{
+	font-family: 'Caveat', cursive;
+	font-size: 6rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #000;
+}
+.carousel-caption h3{
+	font-size: 150%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+	padding: 1.5rem;
+}
+button{
+	background-color: white;
+	border: none;
+}
+#profile{
+	border-radius: 100%;
+	height: 25%;
+	width: 30%;
+}
+.container.row.align-items-center{
+	padding: 2em;
+}
+.social a{
+	font-size: 4.5em;
+	padding: 3rem;
+}
+.row h2{
+	font-size: 1.5em;
+	padding: 1.5em;
+}
+.carousel-control-prev-icon{
+ 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23111' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.card-title a{
+	color: white;
 }
 
 /*---Media Queries --*/
-@media (max-width : 1530px)  {
-    .carousel-caption{
-		top: 32vh;
+@media (max-width: 1500px) {
+	.carousel-caption{
+		top: 33%;
+	}
+	.main-page-img{
+		max-height: 16rem;
 	}
 }
 @media (max-width: 992px) {
 	.carousel-caption{
 		top: 40%;
 	}
+	.social a{
+		font-size: 4em;
+		padding: 2rem;
+	}	
+	.contact-text{
+		top: 20%;
+	}
 }
 @media (max-width: 768px) {
 	.carousel-caption{
-		top: 30%;
+		top: 40%;
 	}
 	.carousel-caption h1{
 		font-size: 5rem;
@@ -64,10 +107,19 @@ ul{
 		font-weight: 400;
 		padding-bottom: .2rem;
 	} 
+  	.social a{
+		font-size: 2.5em;
+		padding: 1.2rem;
+	}	
 }
 @media (max-width: 576px) {
+	#profile{
+		margin: 1em 0;
+		height: 40vh;
+		width: 60vw;
+	}
 	.main-page-img{
-		max-height: 9rem;
+		max-height: 10rem;
 	}
 	.subtitle{
 		top: 33%;
@@ -77,20 +129,40 @@ ul{
 	}
 	.subtitle li{
 		font-size: 2vh;
-    }
-    .subtitle h3{
-		font-size: 3vh;
 	}
 	.carousel-caption{
-		top: 30%;
+		top: 33%;
 	}
-	.row div{
-		padding: 0.5em;
-    }
-    .firstSlide{
-        top: 38%;
-    }
+	.carousel-caption h1{
+		font-size: 20vw;
+	}
+	.p-4{
+		padding: 0!important;
+	}
 	.row h1{
 		font-size: 1.5em;
-    }
+	}
+	.row h2{
+		font-size: 1em;
+		padding: 0;
+	}
+	.carousel-caption h3{
+		font-size: 110%;
+	} 
+	.row div{
+		padding: 0.5em;
+	}
+	.card-deck{
+		padding: 1em 2em;
+	}
+	.pb-5{
+		padding: 0!important;
+	}
+	h5{
+		font-size: 4vw;
+	}
+	.p-4 h5{
+		font-size: 5vw;
+		padding-top: 1em;
+	}
 }

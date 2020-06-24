@@ -17,7 +17,7 @@ function Carousel() {
 						<h1 className="display-2 logo"> Eric Sun</h1>
 					</div>
 					<div className="pt-2">
-						<img src={require("../../assets/dp.jpg")} className="dp" alt="Eric Sun" />
+						<img src={require("../../assets/dp.jpg")} id="profile" alt="Eric Sun" />
 					</div>
 					<div className="p-4">
 						<h5>Aspiring Product Manager based out of Toronto</h5>
@@ -54,7 +54,7 @@ function Carousel() {
 					<div className="container-fluid">
 					<div className="row align-items-center text-center">
 						<div className="col-12 pb-5">
-							<h3>Here are some of my favourites from the past year!</h3>
+							<h5>Here are some of my favourites from the past year!</h5>
 						</div>
 						<div className="col-12 col-md-6 text-center">
 							<h1>Text 📚</h1>
