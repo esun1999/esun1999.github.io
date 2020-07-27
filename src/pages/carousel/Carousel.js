@@ -1,5 +1,6 @@
 import React from 'react';
 import './Carousel.css';
+import { Link } from 'react-router-dom';
 
 function Carousel() {
   return (
@@ -38,7 +39,7 @@ function Carousel() {
 								</div>
 								<div className="col-12 col-md-6">
 									<p className="font-weight-light">I'm currently in my third year studying computer science at the University of Western Ontario. From advising startups in our campus accelerator to tackling business case competitions, I love getting involved in areas of interest!</p>
-									<p>In my free time, I've been learning Android Development through MOOCs from Udacity and Youtube videos! Check out my projects <a href="projects.html">here</a></p>
+									<p>In my free time, I've been learning Android Development through MOOCs from Udacity and Youtube videos! Check out my projects <Link to="/projects" className="nav-link">here</Link></p>
 								</div>
 							</div>
 						</div>
